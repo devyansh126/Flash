@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flash — Turn Notes Into Flashcards</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Falling sakura petals -->
+  <div class="petal-field" aria-hidden="true">
+    <span class="petal"></span><span class="petal"></span><span class="petal"></span><span class="petal"></span>
+    <span class="petal"></span><span class="petal"></span><span class="petal"></span><span class="petal"></span>
+  </div>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <nav class="navbar-container">
+      <a href="#/" class="brand-link" aria-label="Flash home">
+        <span class="brand-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" class="svg-icon" aria-hidden="true">
+            <path d="M14.8 2 5.4 13.4c-.4.5-.05 1.2.6 1.2h4.1l-1.6 7.3c-.1.6.6.9 1 .5l9.3-11.4c.4-.5.05-1.2-.6-1.2h-4l1.6-7.3c.1-.6-.6-.9-1-.5Z" fill="var(--ink)" />
+          </svg>
+        </span>
+        <span class="brand-title">Flash</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#/" id="nav-sets" class="nav-item">Sets</a>
+        <a href="#/study" id="nav-study" class="nav-item">Revise</a>
+        <a href="#/quiz" id="nav-quiz" class="nav-item">Quiz</a>
+        <a href="#/signin" id="nav-signin" class="nav-item">Account</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Dynamic Page Content -->
+  <main id="app" class="main-container"></main>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
